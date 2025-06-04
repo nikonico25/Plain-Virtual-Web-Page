@@ -23,8 +23,11 @@ header {
 
 header nav ul {
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 0.5rem;
     list-style: none;
+    height: 100%;
 }
 
 header nav ul li {
