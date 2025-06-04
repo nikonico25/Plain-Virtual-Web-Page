@@ -21,22 +21,43 @@ header {
     padding: 0.5rem 0;
 }
 
+header h1 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+main section h2 {
+    font-size: 1.25rem;
+    color: rgba(0, 60, 255, 0.76);
+}
+
 header nav ul {
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 0.5rem;
     list-style: none;
+    height: 100%;
 }
 
 header nav ul li {
     padding: 0.5rem;
     font-weight: bold;
-    border-radius: 8%;
+    border-radius: 1.875rem;
     background-color: rgb(207, 195, 255);
     width: 5rem;
     text-align: center;
 }
 
-header nav ul li a:hover {
+header a:visited,
+header a:hover,
+header a:link,
+header nav ul li a:hover,
+header nav ul li a:visited,
+header nav ul li a:link 
+{
+    color: rgba(0, 60, 255, 0.76);
+    text-decoration: none;
 } 
 
 body main {
@@ -45,7 +66,7 @@ body main {
     justify-content: space-between;
     align-content: center;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
     height: 100%;
     width: 100%;
 }
@@ -73,7 +94,7 @@ main .top code {
 main .contact .contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 }
 
@@ -81,8 +102,6 @@ body main section div h2 {
     padding: 0.25rem 0;
     border-bottom: 1px solid gray;
 }
-
-
 
 
 body footer {
